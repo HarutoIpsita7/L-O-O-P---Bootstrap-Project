@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="offcanvas.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <style>
+        .my-container{
+            background-color: azure;
+            height: auto;
+        }
+        .my-button-link{
+            text-decoration: none;
+            color: white;
+        }
+        .my-button-link:hover{
+            text-decoration: none;
+            color: white;
+        }
+        .my-bg-dark{
+            color: #fff;
+        }
+    </style>
+    <link rel="stylesheet" href="stylebox.css">
+</head>
+<body class="bg-primary">
+    <!-- HEADDER N NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <!-- Brand n Toggler -->
+    <a href="index.html" class="navbar-brand mr-auto mr-lg-0" style="color: yellow;">L O O P</a>
+    <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas" data-target="navbar-toggle">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Nav Items -->
+    <div class="navbar-collapse offcanvas-collapse" id="navbar-toggle">
+        <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="home.html">&nbsp;&nbsp;<i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;Home <span class="sr-only">(current)</span>&nbsp;&nbsp;</a>
+        </li>
+        <li class="nav-item dropdown  active my-active">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown">&nbsp;&nbsp;<i class="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp;&nbsp;User&nbsp;&nbsp;</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <a class="dropdown-item" href="myProfile.html">&nbsp;&nbsp;
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bookmark-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm4.16 4.1a.178.178 0 0 0-.32 0l-.634 1.285a.178.178 0 0 1-.134.098l-1.42.206a.178.178 0 0 0-.098.303L6.58 6.993c.042.041.061.1.051.158L6.39 8.565a.178.178 0 0 0 .258.187l1.27-.668a.178.178 0 0 1 .165 0l1.27.668a.178.178 0 0 0 .257-.187L9.368 7.15a.178.178 0 0 1 .05-.158l1.028-1.001a.178.178 0 0 0-.098-.303l-1.42-.206a.178.178 0 0 1-.134-.098L8.16 4.1z"/>
+                    </svg>
+                &nbsp;&nbsp;My Profile</a>
+            <a class="dropdown-item" href="signIn.html">&nbsp;&nbsp;
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list-stars" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5z"/>
+                    <path d="M2.242 2.194a.27.27 0 0 1 .516 0l.162.53c.035.115.14.194.258.194h.551c.259 0 .37.333.164.493l-.468.363a.277.277 0 0 0-.094.3l.173.569c.078.256-.213.462-.423.3l-.417-.324a.267.267 0 0 0-.328 0l-.417.323c-.21.163-.5-.043-.423-.299l.173-.57a.277.277 0 0 0-.094-.299l-.468-.363c-.206-.16-.095-.493.164-.493h.55a.271.271 0 0 0 .259-.194l.162-.53zm0 4a.27.27 0 0 1 .516 0l.162.53c.035.115.14.194.258.194h.551c.259 0 .37.333.164.493l-.468.363a.277.277 0 0 0-.094.3l.173.569c.078.255-.213.462-.423.3l-.417-.324a.267.267 0 0 0-.328 0l-.417.323c-.21.163-.5-.043-.423-.299l.173-.57a.277.277 0 0 0-.094-.299l-.468-.363c-.206-.16-.095-.493.164-.493h.55a.271.271 0 0 0 .259-.194l.162-.53zm0 4a.27.27 0 0 1 .516 0l.162.53c.035.115.14.194.258.194h.551c.259 0 .37.333.164.493l-.468.363a.277.277 0 0 0-.094.3l.173.569c.078.255-.213.462-.423.3l-.417-.324a.267.267 0 0 0-.328 0l-.417.323c-.21.163-.5-.043-.423-.299l.173-.57a.277.277 0 0 0-.094-.299l-.468-.363c-.206-.16-.095-.493.164-.493h.55a.271.271 0 0 0 .259-.194l.162-.53z"/>
+                    </svg>
+                    &nbsp;&nbsp;Switch Accounts</a>
+            <a class="dropdown-item" href="logout.html">&nbsp;&nbsp;
+                <i class="fa fa-sign-out" aria-hidden="true"></i>
+                &nbsp;&nbsp;Log Out</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="liked.html">&nbsp;&nbsp;<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>&nbsp;&nbsp;Liked&nbsp;&nbsp;</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="pictures.html">&nbsp;&nbsp;<i class="fa fa-camera" aria-hidden="true"></i>&nbsp;&nbsp;Pictures&nbsp;&nbsp;</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="contactUs.html">&nbsp;&nbsp;<i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;&nbsp;Contact Us&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+<!-- Headder N Navbar End Portion -->
+
+<!-- Under Headding -->
+<div class="bg-light disable" style="padding-top: 5px; padding-left: 17px;">
+    <div class="col-12 row">
+        <h6 class="">
+            <a href="#" class="disabled my-link-disabled">
+                N A T U R E &nbsp;&nbsp; P H O T O G R A P H Y
+            </a>
+        </h6>
+        <h6 class="ml-auto my-link-right">
+            <a href="#" class="disabled my-link-disabled mr-auto pr-0">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                &nbsp;9090707061
+            </a>
+        </h6>
+    </div>
+</div>
+<!--End Under Headding -->
+
+    <!-- Contents : -->
+    <br>
+    <div class="container card" style="width: 100%;">
+        <img src="images/fantasy5.jpg" alt="" class="img-fluid card-img-top">
+        <div class="card-body">
+            <h3 class="card-title" style="color: red;">Haruto_07</h3>
+            <p class="card-text" align="justify" style="color: green;">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, beatae! Quis facere officia maiores ipsum eveniet labore, illo nam voluptates, repudiandae, in omnis perferendis odio illum. Vero placeat reiciendis ducimus!
+            </p>
+            <div class="btn-group btn-group-lg btn-block">
+                <button class="btn btn-primary"><a href="liked.html" class="card-link text-light">Liked Pictures</a></button>
+
+                <button class="btn btn-dark"><a href="logout.html" class="card-link text-light">Log-Out</a></button>
+                
+                <button class="btn btn-primary"><a href="#" class="card-link text-light">Edit Profile</a></button>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="jumbotron jumbotron-fluid my-container bg-primary">
+        <div class="bg-light container">
+            <h1 class="text-dark text-center">:Y O U R&nbsp;&nbsp;&nbsp;G A L L E R Y:</h1>
+        </div>
+        <!-- ================Type 5================ -->
+        <div class="container my-container">
+            <div class="row">
+                <div class="col-md-8">
+                    <img src="images/japan1.jpg" alt="" class="my-img img-fluid p-5">
+                    <br>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z"/>
+                            </svg> Place Name   :     Lorem
+                        </li>
+                        <li class="list-group-item">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z"/>
+                            </svg> Picture Credit    :   Ipsum
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-danger btn-block mt-2">
+                        <i class="fa fa-trash" aria-hidden="true"></i> Delete From Your Gallery</a><br>
+                </div>
+                <div class="col-md-4">
+                    <br><br><br>
+                    <h3>Title : Lorem Picture</h3>
+                    <hr>
+                    <div class="container">
+                        <h5>Details : </h5>
+                        <ul class="list-group">
+                            <li class="list-group-item"><i class="fa fa-clock-o" aria-hidden="true"></i> About : <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p></li>
+                            <li class="list-group-item"><i class="fa fa-map-marker" aria-hidden="true"></i> Location : <p>Consectetur eos optio facere saepe tempore. Illum delectus officia quo illo impedit nobis pariatur sed nam molestiae, est odio possimus, omnis corrupti.</p></li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="container">
+                        <div class="btn-group btn-block">
+                            <button class="btn btn-dark"><a href="#" class="my-button-link"><i class="fa fa-download" aria-hidden="true"></i> Download</a></button>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container my-container">
+            <div class="row">
+                <div class="col-md-8">
+                    <img src="images/rainforest10.jpg" alt="" class="my-img img-fluid p-5">
+                    <br>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z"/>
+                            </svg> Place Name   :     Lorem
+                        </li>
+                        <li class="list-group-item">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z"/>
+                            </svg> Picture Credit    :   Ipsum
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-danger btn-block mt-2">
+                        <i class="fa fa-trash" aria-hidden="true"></i> Delete From Your Gallery</a><br>
+                </div>
+                <div class="col-md-4">
+                    <br><br><br>
+                    <h3>Title : Lorem Picture</h3>
+                    <hr>
+                    <div class="container">
+                        <h5>Details : </h5>
+                        <ul class="list-group">
+                            <li class="list-group-item"><i class="fa fa-clock-o" aria-hidden="true"></i> About : <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p></li>
+                            <li class="list-group-item"><i class="fa fa-map-marker" aria-hidden="true"></i> Location : <p>Consectetur eos optio facere saepe tempore. Illum delectus officia quo illo impedit nobis pariatur sed nam molestiae, est odio possimus, omnis corrupti.</p></li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="container">
+                        <div class="btn-group btn-block">
+                            <button class="btn btn-dark"><a href="#" class="my-button-link"><i class="fa fa-download" aria-hidden="true"></i> Download</a></button>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container my-container">
+            <div class="row">
+                <div class="col-md-8">
+                    <img src="images/bird.PNG" alt="" class="my-img img-fluid p-5">
+                    <br>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z"/>
+                            </svg> Place Name   :     Lorem
+                        </li>
+                        <li class="list-group-item">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z"/>
+                            </svg> Picture Credit    :   Ipsum
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-danger btn-block mt-2">
+                        <i class="fa fa-trash" aria-hidden="true"></i> Delete From Your Gallery</a><br>
+                </div>
+                <div class="col-md-4">
+                    <br><br><br>
+                    <h3>Title : Lorem Picture</h3>
+                    <hr>
+                    <div class="container">
+                        <h5>Details : </h5>
+                        <ul class="list-group">
+                            <li class="list-group-item"><i class="fa fa-clock-o" aria-hidden="true"></i> About : <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p></li>
+                            <li class="list-group-item"><i class="fa fa-map-marker" aria-hidden="true"></i> Location : <p>Consectetur eos optio facere saepe tempore. Illum delectus officia quo illo impedit nobis pariatur sed nam molestiae, est odio possimus, omnis corrupti.</p></li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="container">
+                        <div class="btn-group btn-block">
+                            <button class="btn btn-dark"><a href="#" class="my-button-link"><i class="fa fa-download" aria-hidden="true"></i> Download</a></button>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container my-container">
+            <div class="row">
+                <div class="col-md-8">
+                    <img src="images/japan4.jpg" alt="" class="my-img img-fluid p-5">
+                    <br>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z"/>
+                            </svg> Place Name   :     Lorem
+                        </li>
+                        <li class="list-group-item">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z"/>
+                            </svg> Picture Credit    :   Ipsum
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-danger btn-block mt-2">
+                        <i class="fa fa-trash" aria-hidden="true"></i> Delete From Your Gallery</a><br>
+                </div>
+                <div class="col-md-4">
+                    <br><br><br>
+                    <h3>Title : Lorem Picture</h3>
+                    <hr>
+                    <div class="container">
+                        <h5>Details : </h5>
+                        <ul class="list-group">
+                            <li class="list-group-item"><i class="fa fa-clock-o" aria-hidden="true"></i> About : <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p></li>
+                            <li class="list-group-item"><i class="fa fa-map-marker" aria-hidden="true"></i> Location : <p>Consectetur eos optio facere saepe tempore. Illum delectus officia quo illo impedit nobis pariatur sed nam molestiae, est odio possimus, omnis corrupti.</p></li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="container">
+                        <div class="btn-group btn-block">
+                            <button class="btn btn-dark"><a href="#" class="my-button-link"><i class="fa fa-download" aria-hidden="true"></i> Download</a></button>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container my-container">
+            <div class="row">
+                <div class="col-md-8">
+                    <img src="images/japan5.jpg" alt="" class="my-img img-fluid p-5">
+                    <br>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z"/>
+                            </svg> Place Name   :     Lorem
+                        </li>
+                        <li class="list-group-item">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z"/>
+                            </svg> Picture Credit    :   Ipsum
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-danger btn-block mt-2">
+                        <i class="fa fa-trash" aria-hidden="true"></i> Delete From Your Gallery</a><br>
+                </div>
+                <div class="col-md-4">
+                    <br><br><br>
+                    <h3>Title : Lorem Picture</h3>
+                    <hr>
+                    <div class="container">
+                        <h5>Details : </h5>
+                        <ul class="list-group">
+                            <li class="list-group-item"><i class="fa fa-clock-o" aria-hidden="true"></i> About : <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p></li>
+                            <li class="list-group-item"><i class="fa fa-map-marker" aria-hidden="true"></i> Location : <p>Consectetur eos optio facere saepe tempore. Illum delectus officia quo illo impedit nobis pariatur sed nam molestiae, est odio possimus, omnis corrupti.</p></li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="container">
+                        <div class="btn-group btn-block">
+                            <button class="btn btn-dark"><a href="#" class="my-button-link"><i class="fa fa-download" aria-hidden="true"></i> Download</a></button>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container my-container">
+            <div class="row">
+                <div class="col-md-8">
+                    <img src="images/dolphins3.jpg" alt="" class="my-img img-fluid p-5">
+                    <br>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z"/>
+                            </svg> Place Name   :     Lorem
+                        </li>
+                        <li class="list-group-item">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z"/>
+                            </svg> Picture Credit    :   Ipsum
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-danger btn-block mt-2">
+                        <i class="fa fa-trash" aria-hidden="true"></i> Delete From Your Gallery</a><br>
+                </div>
+                <div class="col-md-4">
+                    <br><br><br>
+                    <h3>Title : Lorem Picture</h3>
+                    <hr>
+                    <div class="container">
+                        <h5>Details : </h5>
+                        <ul class="list-group">
+                            <li class="list-group-item"><i class="fa fa-clock-o" aria-hidden="true"></i> About : <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p></li>
+                            <li class="list-group-item"><i class="fa fa-map-marker" aria-hidden="true"></i> Location : <p>Consectetur eos optio facere saepe tempore. Illum delectus officia quo illo impedit nobis pariatur sed nam molestiae, est odio possimus, omnis corrupti.</p></li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="container">
+                        <div class="btn-group btn-block">
+                            <button class="btn btn-dark"><a href="#" class="my-button-link"><i class="fa fa-download" aria-hidden="true"></i> Download</a></button>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container my-container">
+            <div class="row">
+                <div class="col-md-8">
+                    <img src="images/japan7.jpg" alt="" class="my-img img-fluid p-5">
+                    <br>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z"/>
+                            </svg> Place Name   :     Lorem
+                        </li>
+                        <li class="list-group-item">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z"/>
+                            </svg> Picture Credit    :   Ipsum
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-danger btn-block mt-2">
+                        <i class="fa fa-trash" aria-hidden="true"></i> Delete From Your Gallery</a><br>
+                </div>
+                <div class="col-md-4">
+                    <br><br><br>
+                    <h3>Title : Lorem Picture</h3>
+                    <hr>
+                    <div class="container">
+                        <h5>Details : </h5>
+                        <ul class="list-group">
+                            <li class="list-group-item"><i class="fa fa-clock-o" aria-hidden="true"></i> About : <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p></li>
+                            <li class="list-group-item"><i class="fa fa-map-marker" aria-hidden="true"></i> Location : <p>Consectetur eos optio facere saepe tempore. Illum delectus officia quo illo impedit nobis pariatur sed nam molestiae, est odio possimus, omnis corrupti.</p></li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="container">
+                        <div class="btn-group btn-block">
+                            <button class="btn btn-dark"><a href="#" class="my-button-link"><i class="fa fa-download" aria-hidden="true"></i> Download</a></button>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+    <!-- Footer starts here -->
+<div class="card mt-2 bg-dark text-light">
+    <div class="card-header text-center disable">
+        <div class="row">
+            <div class="col-md-3 bg-transparent"><a href="#" class="my-footer-link"><i class="fa fa-github" aria-hidden="true"></i>&nbsp;&nbsp;git-hub</a></div>
+            <div class="col-md-3 bg-transparent"><a href="#" class="my-footer-link"><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;facebook</a></div>
+            <div class="col-md-3 bg-transparent"><a href="#" class="my-footer-link"><i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;&nbsp;twitter</a></div>
+            <div class="col-md-3 bg-transparent"><a href="#" class="my-footer-link"><i class="fa fa-whatsapp" aria-hidden="true"></i>&nbsp;&nbsp;Whatsapp</a></div>
+        </div>
+    </div>
+    <div class="card-body text-center text-muted font-weight-bold">
+        <i class="fa fa-copyright" aria-hidden="true"></i>&nbsp;&nbsp;2020&nbsp;&nbsp;&nbsp;&nbsp; L O O P &nbsp;&nbsp;-&nbsp;&nbsp; N A T U R E &nbsp;&nbsp;P H O T O G R A P H Y
+    </div>
+    <div class="card-footer text-center disable">
+        <a href=#" class="my-link-disabled">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-link-45deg" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+            <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z"/>
+            </svg>&nbsp;&nbsp;http://www.loop.in</a>
+    </div>
+    <div class="card-footer text-center disable">
+        <a href="#" class="my-link-disabled"><i class="fa fa-address-book " aria-hidden="true"></i>&nbsp; haruto.ipsita@gmail.com</a>
+    </div>
+</div>
+<!-- Footer Ends here -->
+</body>
+</html>
